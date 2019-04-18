@@ -1,15 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text, View, Platform, Image } from 'react-native';
 import {Button} from 'native-base';
+import Landing from './src/Landing';
 
-var myBackground = require('./assets/landing.jpg');
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-       
-         <Image source={myBackground}/>
+         <Landing />
       </View>
     );
   }
