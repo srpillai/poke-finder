@@ -2,14 +2,34 @@
 import React from 'react';
 import {View,Text} from 'react-native';
 import {Header,Item,Icon,Input,Button} from 'native-base';
+import PokeLoader from './PokeLoader';
+import SearchBody from './SearchBody';
 
 //create stuff
 class Search extends React.Component{
 state = {
 		pokeSearch: "",
-		onCall: true,
+		onCall: false,
 		data: {}
 	}
+
+	searchPoke = () =>{
+		
+	}
+
+	renderBody = () =>{
+		if(this.state.onCall){
+			return(
+				<PokeLoader />
+			)
+		}
+		else{
+			return(
+				<SearchBody />
+			)
+		}
+	}
+
 	
 	render(){
 		return(
@@ -28,7 +48,7 @@ state = {
 					</Item>
 
 				</Header>
-				
+				{this.renderBody()}
 			</View>
 		)
 	}
