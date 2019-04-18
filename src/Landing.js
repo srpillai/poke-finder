@@ -1,5 +1,5 @@
 import React from 'react';
-import {View,Text, Image} from 'react-native';
+import {View,Text, Image, ImageBackground} from 'react-native';
 import {Button} from 'native-base';
 
 var myBackground = require('../assets/landing.jpg');
@@ -8,13 +8,30 @@ class Landing extends React.Component{
 	render(){
 		return(
 			<View>
-				<Image source={myBackground}>
-		          
-		        </Image>
+				 <ImageBackground source={myBackground} style={styles.backgroundStyle}>
+   				 
+   				 <View style={styles.viewStyle}>
+		            <Text
+		              style={styles.titleStyle}
+		            >Welcome to PokeSearch</Text>
+		            <Button
+		              block={true}
+		              style={styles.buttonStyle}
+		              onPress={()=>this.props.switchScreen("search")}
+		            >
+		              <Text style={styles.buttonText}>Start Searching</Text>
+		            </Button>
+		          </View>
+   				 
+   				 
+   				 
+  				 </ImageBackground>
 			</View>
 		)
 	}
 }
+
+
 
 const styles = {
 	viewStyle: {
@@ -33,6 +50,10 @@ const styles = {
 	  },
 	  buttonText: {
 	    color: 'white'
+	  },
+	  backgroundStyle: {
+	  	width: '100%', 
+	  	height: '100%'
 	  }
 }
 
