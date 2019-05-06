@@ -2,8 +2,8 @@
 
 React-native, Native Base, Expo, Axios
 
-*       Gets data around Pokemon and Pokemon universe
-*       Builds React Native Apps for iOS and Android
+*         Gets data around Pokemon and Pokemon universe
+*         Builds React Native Apps for iOS and Android
 * 		Uses React Native Expo components
 * 		Uses Native Base components
 * 		Makes API request to poke database with axios
