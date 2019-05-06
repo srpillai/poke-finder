@@ -1,12 +1,16 @@
+<<<<<<< HEAD
 # poke-finder
+=======
+poke-finder
+>>>>>>> 99f4b92d00208946ab3b7d8ea30b1289330f9262
 
 React-native, Native Base, Expo, Axios
 
-*         Gets data around Pokemon and Pokemon universe
-*         Builds React Native Apps for iOS and Android
-* 		Uses React Native Expo components
-* 		Uses Native Base components
-* 		Makes API request to poke database with axios
+*     Gets data around Pokemon and Pokemon universe
+*     Builds React Native Apps for iOS and Android
+* 	  Uses React Native Expo components
+* 	  Uses Native Base components
+* 	  Makes API request to poke database with axios
 
 ## Built With:
 
